@@ -30,12 +30,7 @@ def shuffle_data(dataset):
 
 
 def generate_train_test_number(shuffle_index):
-    """
-    total_number:600
-    trian_number:600 * 0.7 = 420
-    validation_number:600 * 0.1 = 60
-    test_number:600 * 0.2 = 120
-    """
+    
     train_number = shuffle_index[:420]
     validation_number = shuffle_index[420:420+60]
     test_number = shuffle_index[420+60:]
